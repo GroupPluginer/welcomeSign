@@ -20,10 +20,10 @@ use pocketmine\block\Block;
     $name = $player->getName();
     
    if($event->getLine(0) === "s"){
-    $e->setLine(0, "§l§7Welcome");
-    $e->setLine(1, $name);
-    $e->setLine(2, "§l§1to");
-    $e->setLine(3, "§l§2server");   
+    $event->setLine(0, "§l§7Welcome");
+    $event->setLine(1, $name);
+    $event->setLine(2, "§l§1to");
+    $event->setLine(3, "§l§2server");   
     }
   }
 }
