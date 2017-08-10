@@ -20,7 +20,7 @@ use pocketmine\block\Block;
    $e->setLine(0, "§l§4Welcome");
    $e->setLine(1, "§l§2$name");
    $e->setLine(2, "§l§8to Server");
-   $e->setLine(3. "§l§0hack=ban-ip enjoy -=> plugin by @cvv.119");
+   $e->setLine(3, "§l§0hack=ban-ip enjoy -=> plugin by @cvv.119");
     }
    }
  }
