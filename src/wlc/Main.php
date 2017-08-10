@@ -16,17 +16,11 @@ use pocketmine\block\Block;
    }
    
    public function onChange(SignChangeEvent $event){
-   $sign = $event->setLine();
-   $player = $event->getPlayer();
-   $name = $player->getName();
-      
-   if(strtolower(trim($event->()getLine(0))) == "server" || strtolower(trim($event->getLine(0))) == "[Welcome]"){
-      $sign(0, "[WELCOME]");
-      $sign(1, "§l§7$name");
-      $sign(2, "§l§3to");
-      $sign(3, "§l§1Server");
-    
-     $player->sendMessage(TF::GREEN."done plugin by cvv_119");
-      }
+   if($event->getLine(0) === "s"){
+    $e->setLine(0, "§l§7Welcome");
+    $e->setLine(1, $name);
+    $e->setLine(2, "§l§1to");
+    $e->setLine(3, "§l§2server");   
     }
- }
+  }
+}
