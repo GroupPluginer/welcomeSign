@@ -16,6 +16,9 @@ use pocketmine\block\Block;
    }
    
    public function onChange(SignChangeEvent $event){
+    $player = $event->getPlayer();
+    $name = $player->getName();
+    
    if($event->getLine(0) === "s"){
     $e->setLine(0, "§l§7Welcome");
     $e->setLine(1, $name);
